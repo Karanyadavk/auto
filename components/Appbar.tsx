@@ -12,7 +12,7 @@ const mont = Montserrat({
 export const Appbar = () => {
     return (
         <div className="text-white">
-            <div className="bg-[#232628] flex items-center justify-end text-xs gap-4 text-gray-400 p-2">
+            <div className="bg-[#232628] border-b-[.5px] border-gray-500 flex items-center justify-end text-xs gap-4 text-gray-400 p-2">
                 <div className="flex items-center gap-0.5 hover:text-white hover:cursor-pointer">
                     <Phone fill="currentColor" stroke="transparent" size={16} />
                     <h1>+1 345-324-5773</h1>
@@ -29,6 +29,9 @@ export const Appbar = () => {
                     <div className="flex items-center gap-0.5 hover:text-white hover:cursor-pointer">
                         <UserRound fill="currentColor" stroke="transparent" size={16} />
                         <h1 className="">Login</h1>
+                    </div>
+                    <div>
+                        |
                     </div>
                     <div className="flex items-center">
                         <h1 className="hover:text-white hover:cursor-pointer">Register</h1>
@@ -69,7 +72,7 @@ export const Appbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#EAEDF0] text-black flex items-center justify-between">
+            <div className="bg-[#EAEDF0] text-black flex items-center justify-between px-4">
                 <div className="flex items-center">
                     {NavbarData.map((item, index) => (
                         <a

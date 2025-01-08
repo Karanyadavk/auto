@@ -30,7 +30,7 @@ export const MediaGalleryCarousel = () => {
             <div className="h-96 w-full flex flex-col items-center relative text-white">
                 <div className="h-full w-full flex items-center gap-8 justify-center">
                     {currentItems.map((item, index) => (
-                        <img key={index} src={item} alt={"image" + index} className="w-72 h-48 object-cover brightness-50" />
+                        <img key={index} src={item} alt={"image" + index} className="w-64 h-48 object-cover" />
                     ))}
                 </div>
                 <div className="flex items-center gap-64">

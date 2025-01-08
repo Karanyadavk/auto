@@ -24,16 +24,19 @@ export const TestimonialCarousel = () => {
                 <h1>{TestimonialCarouselData[currentIndex].title}</h1>
                 <p>{TestimonialCarouselData[currentIndex].description}</p>
                 <div className="flex items-center gap-12 text-base">
-                    <h1>{TestimonialCarouselData[currentIndex].owner}</h1>
-                    <h1>{TestimonialCarouselData[currentIndex].car}</h1>
+                    <h1 className="uppercase">{TestimonialCarouselData[currentIndex].owner}</h1>
+                    <div className="flex items-center gap-2 text-gray-400">
+                        {TestimonialCarouselData[currentIndex].icon}
+                        <h1 className="font-semibold">{TestimonialCarouselData[currentIndex].car}</h1>
+                    </div>
                 </div>
             </div>
             <div className="flex items-center gap-8 place-self-end">
-                <div className="hover:cursor-pointer" onClick={handlePrev}>
-                    <ChevronLeft className="" />
+                <div className="hover:cursor-pointer hover:text-[#007AFF]" onClick={handlePrev}>
+                    <ChevronLeft className="" size={32} />
                 </div>
-                <div className="hover:cursor-pointer" onClick={handleNext}>
-                    <ChevronRight className="" />
+                <div className="hover:cursor-pointer hover:text-[#007AFF]" onClick={handleNext}>
+                    <ChevronRight className="" size={32} />
                 </div>
             </div>
         </div>

@@ -25,7 +25,9 @@ export const Accordion = () => {
                 className="w-full flex justify-between items-center py-3 md:py-5 text-slate-800"
               >
                 <div className="flex justify-center items-center gap-2 md:gap-8">
-                  <MoveRight />
+                  <div className={` ${openIndexes[index] ? "text-[#CC6118]" : "text-[#6C98E2]"}`}>
+                    {item.icon}
+                  </div>
                   <span className="text-[2.5vw] md:text-[1.5vw] font-bold">{item.question}</span>
                 </div>
                 <span

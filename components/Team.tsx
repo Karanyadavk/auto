@@ -24,8 +24,8 @@ export const Team = () => {
                                     <UserRound size={96} fill="currentColor" stroke="none" />
                                 </div>
                             }
-                            <div className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 group-hover:block">
-                                {item.email.length > 1 ? <div className="px-2 py-1 bg-[#007AFF] text-center rounded-full hover:cursor-pointer">{item.email}</div> : ""}
+                            <div className="hidden absolute left-1/2 -translate-x-1/2 py-6 w-3/4 bottom-0 group-hover:block">
+                                {item.email.length > 1 ? <div className="px-2 py-1 bg-[#007bffab] text-center rounded-full hover:cursor-pointer">{item.email}</div> : ""}
                                 {item.mobile.length > 1 ? 
                                     <div className="px-2 py-1 bg-white text-black rounded-full flex items-center gap-1 hover:cursor-pointer mt-2">
                                         <div className="flex text-[#007AFF] items-center p-1 border-2 border-[#007AFF] rounded-full">
