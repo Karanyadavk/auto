@@ -9,7 +9,8 @@ import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { Team } from "@/components/Team";
 import { Marquee } from "@/components/Marquee";
 import { Footer } from "@/components/Footer";
-
+import bg from "@/assets/Images/About/AboutBg.webp"
+import track from "@/assets/Images/About/track.webp"
 
 const open = Open_Sans({
     subsets: ['latin'],
@@ -19,10 +20,10 @@ const open = Open_Sans({
 
 export default function About() {
     return (
-        <div>
-            <div>
+        <div  className='w-full min-h-screen' style={{backgroundImage: `url(${bg.src})`}}>
+            <div className="xl:px-16">
                 <Appbar />
-                <div className="bg-gray-700 h-60 w-full text-white flex flex-col gap-6 items-center justify-center">
+                <div className="h-52 w-full text-white flex flex-col gap-6 items-center justify-center bg-no-repeat  object-cover" style={{backgroundImage: `url(${track.src})`}}>
                     <div className="flex flex-col items-center gap-4">
                         <h1 className="text-4xl font-bold">About Us</h1>
                         <div className="flex items-center gap-0.5">
@@ -33,7 +34,7 @@ export default function About() {
                     <p className="text-center text-sm">Customer service is not a <br />
                     department, it</p>
                 </div>
-                <div className="flex flex-col px-16">
+                <div className="flex flex-col px-16 bg-white">
                     <div className="px-4 py-2 border-b text-xs text-gray-500">
                         Sony&apos;s Auto {">"} About us
                     </div>
@@ -65,7 +66,7 @@ export default function About() {
                     </div>
                 </div>
                 <MediaGalleryCarousel />
-                <div className="flex w-full gap-4 px-16 py-16">
+                <div className="flex w-full gap-4 px-16 py-16 bg-white">
                     <div className="flex flex-col w-1/2">
                         <h1 className="text-[#242037] text-3xl font-bold mb-8">OUR ADVANTAGES</h1>
                         <Accordion />
