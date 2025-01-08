@@ -35,7 +35,7 @@ export default function About() {
                 </div>
                 <div className="flex flex-col px-16">
                     <div className="px-4 py-2 border-b text-xs text-gray-500">
-                        Sony's Auto {">"} About us
+                        Sony&apos;s Auto {">"} About us
                     </div>
                     <div className="flex flex-col gap-20 py-24">
                         <div className="flex justify-between gap-8">
