@@ -27,7 +27,7 @@ export const Footer = () => {
                 ))}
             </div>
             <div className="flex items-center justify-between pt-4">
-                <p className="text-gray-300 text-sm">Copyright © Sony's Auto</p>
+                <p className="text-gray-300 text-sm">Copyright © Sony&apos;s Auto</p>
                 <div className="text-[#007AFF] flex items-center gap-2">
                         <div className="p-2 rounded-full bg-[#2F3234] hover:cursor-pointer hover:bg-[#2F3234]/90">
                             <Facebook fill="currentColor" size={16} />
