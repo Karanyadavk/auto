@@ -1,7 +1,7 @@
 "use client"
 
 import { FaqData } from "@/data/FaqData";
-import { ArrowBigRight, ChevronDown, MoveRight } from "lucide-react";
+import { ChevronDown, MoveRight } from "lucide-react";
 import { useState } from "react";
 
 
