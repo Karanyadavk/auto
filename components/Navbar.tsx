@@ -1,6 +1,5 @@
 import Logo from '@/assets/Images/logo.webp';
 import { NavbarData } from '@/data/NavbarData';
-import { cn } from '@/Utils/Utils';
 import { Montserrat } from 'next/font/google';
 import Link from 'next/link';
 
